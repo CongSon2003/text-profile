@@ -1,0 +1,586 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'font-text';
+}
+@font-face {
+    font-family: font-text;
+    src: url(/fontsite/BASKE1.ttf);
+}
+:root{
+    --layout-title:2.4rem;
+}
+h3{
+    margin: 0;
+}
+.header_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 138px;
+}
+.header_nav-info{
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.75;
+    width: 350px;
+}
+.header_nav-info--listmobile{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    display: none;
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    animation: fapemenu linear 0.2s;
+    z-index: 10;
+    padding: 15px;
+    box-sizing: border-box;
+    line-height: 35px;
+}
+.menu_list-moblie:checked ~ .header_nav-info--listmobile{
+    display: flex;
+}
+@keyframes fapemenu {
+    from{
+        transform: translateY(-27%);
+    }
+}
+.header_nav-info--listmobile div a{
+    text-decoration: none;
+    padding-bottom: 5px;
+    color: black;
+}
+.header_nav-info--listmobile div a:hover{
+    border-bottom: 2px solid black;
+}
+.header_nav-info--mobile{
+    display: none;
+}
+.main{
+    border-bottom: 1px solid black;
+    padding-bottom: 3px;
+}
+.header_nav--link{
+    text-decoration: none;
+    color: black;
+}
+.content{
+    background-color: #fff;
+    width: 100%;
+}
+.content_AboutMe{
+    height: 800px;
+}
+.content_AboutMe-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 30px;
+    height: 100%;
+    padding-left: 15%;
+    padding-right: 30%;
+}
+.content_AboutMe--title{
+    font-size: 2.5rem;
+}
+.content_AboutMe--title h3{
+    font-weight: 100;
+    margin-top: 50px;
+    opacity: 0.5;
+}
+.crossbar{
+    width: 6%;
+    position: relative;
+    border-bottom: 3px solid #7f7f7f ;
+}
+.crossbar-item{
+    position: absolute;
+    left: 40%;
+    background-color: #fff;
+    height: 3px;
+    width: 10px;
+}
+.crossbar_moblie{
+    display: none;
+}
+.content_AboutMe--content{
+    font-size: 1.3rem;
+    font-weight: 1;
+    line-height: 40px;
+    opacity: 0.75;
+}
+.content_AboutMe--textone{
+    margin-bottom: 50px;
+}
+.content_Education{
+    background-color: #bab7b1 ;
+    height: 800px;
+}
+.content_Education-item{
+    padding-left: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.content_Education--title h3{
+    font-size: 3rem;
+    font-weight: 100;
+    color: #fff;
+}
+.content_Education--content{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    line-height: 70px;
+}
+.content_Education--content h4{
+    margin: 0;
+    font-weight: 100;
+    font-size: 2rem;
+}
+.content_Education--content .content_content-year{
+    font-size: 1.2rem;
+    font-style: oblique;
+}
+.content_content-Univarsity{
+    font-size: 1.3rem;
+    font-style: italic;
+}
+.content_Hobby{
+    background-color: aquamarine;
+    width: 100%;
+    height: 300px;
+}
+.content_Employment{
+    height:auto;
+    min-height: 1500px;
+    background-color: #fff;
+}
+.content_Employment-block{
+    display: flex;
+    height:auto;
+    min-height: 1500px;
+    padding-left: 15%;
+    padding-right: 15%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.content_Employment--title h3{
+    font-size: 3rem;
+    font-weight: 100;
+}
+.content_Employment--content div ~ div{
+    margin-bottom: 30px;
+}
+.Employment_content-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* width: 1000px; */
+}
+.Employment_content-item--right{
+    width: 50%;
+    font-size: 1.3rem;
+    line-height: 40px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    opacity: 0.75;
+}
+.Employment_content-item--left h4{
+    font-size: 2rem;
+    font-weight: 100;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+.Employment_content-item--left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+}
+.Employment_content-item--left span{
+    opacity: 0.5;
+    font-size: 1.2rem;
+    display: block;
+}
+.Employment_content-item--left span ~ span{
+    font-size: 1.4rem;
+    font-style: italic;
+}
+/*Whatclientssayaboutme-about*/
+.content_Whatclientssayaboutme{
+    padding-left: 15%;
+    padding-right: 10%;
+    background-color: #bab7b1;
+    height: unset;
+    height: 900px;
+    color: #fff;
+}
+.content_Whatclientssayaboutme-block{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly; 
+}
+.content_Whatclientssayaboutme-title h3{
+    font-size: 3rem;
+    font-weight: 100;
+}
+.content_Whatclientssayaboutme-about{
+    display: flex;
+    justify-content: space-between;
+}
+.content_Whatclientssayaboutme-about--left{
+    width: 37%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Whatclientssayaboutme_left--quotes i{
+    font-size: 2rem;
+}
+.Whatclientssayaboutme_left--text p{
+    font-size: 1.3rem;
+    line-height: 40px;
+    font-weight: 100;
+}
+.content_Whatclientssayaboutme-about--left span{
+    font-size: 1.2rem;
+}
+/*footer*/
+.footer{
+    background-color: #fff;
+    height: 400px;
+}
+.footer_content{
+    padding-left: 138px;
+    padding-right: 250px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* align-content: center; */
+}
+.footer_content-left h3{
+    font-size: 3rem;
+    font-weight: 200;
+    margin-bottom: 48px;
+    opacity: 0.74;
+}
+.footer_content-left .footer_content-left--info{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_content-right h4{
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 48px;
+    font-weight: 200;
+    opacity: 0.74;
+}
+/*Mobile : width < 740px*/
+@media only screen and (max-width:46.1875rem) {
+    .header_nav-info{
+        display: none;
+    }
+    .header_nav-info--mobile{
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .header_nav{
+        padding: 30px 15px;
+    }
+    .content_Education{
+        height: 550px;
+        display: flex;
+        justify-content: center;
+    }
+    .content_Education--title h3{
+        font-size: var(--layout-title);
+    }
+    .content_Education--content h4{
+        font-size: 1.8rem;
+        line-height: 35px;
+    }
+    .content_Education-item{
+        padding: 0 15px;
+        width: 400px;
+    }
+    .content_content-year{
+        font-size: 1.1rem !important;
+    }
+    .content_content-Univarsity{
+        font-size: 1.2rem !important;
+        line-height: 35px;
+    }
+    /**/
+    .content_AboutMe{
+        display: flex;
+        justify-content: center;
+        min-height: 1000px;
+        height: unset;
+    }
+    .content_AboutMe--title h3{
+        font-size: var(--layout-title);
+    }
+    .content_AboutMe-item{
+        padding: 0 15px;
+        width: 400px;
+    }
+    .crossbar{
+        display: none;
+    }
+    .crossbar_moblie{
+        position: relative;
+        display: block;
+        border-bottom: 2px solid black;
+        opacity: 0.5;
+        height: 50px;
+        width: 45px;
+    }
+    .crossbar_moblie::before{
+        content: "";
+        position: absolute;
+        background-color: #fff;
+        bottom: -2px;
+        width: 10px;
+        height: 2px;
+        left: calc(50% - calc(10px / 2));
+    }
+    /**/
+    .content_Employment{
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .content_Employment-block{
+        padding: 0 15px;
+        margin: 40px 0;
+        width: 400px;
+    }
+    .content_Employment--title h3{
+        font-size: var(--layout-title);
+        margin-bottom: 20px;
+    }
+    .Employment_content-item--left h4{
+        font-size: 1.8rem;
+    }
+    .content_Employment--content div ~ div{
+        margin-bottom: 0 !important;
+    }
+    .Employment_content-item--right{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 0;
+    }
+    .Employment_content-item{
+        flex-direction: column;
+    }
+    /**/
+    .content_Whatclientssayaboutme{
+        height: unset;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    .content_Whatclientssayaboutme-title h3{
+        font-size: var(--layout-title);
+    }
+    .content_Whatclientssayaboutme-block{
+        width: 410px;
+        padding: 0 15px;
+        margin: 50px 0;
+    }
+    .Whatclientssayaboutme_left--quotes i{
+        margin: 30px 0;
+        font-size: 1.5rem;
+    }
+    .content_Whatclientssayaboutme-about{
+        flex-direction: column;
+    }
+    .content_Whatclientssayaboutme-about div{
+        width: 100%;
+    }
+    /**/
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 350px;
+    }
+    .footer_content{
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0 15px;
+        width: auto;
+    }
+    .footer_content-left h3{
+        font-size: var(--layout-title);
+        margin-bottom: 25px;
+    }
+    .footer_content-right h4{
+        margin-bottom: 25px;
+        font-size: 2rem;
+    }
+    .footer_content div ~ div{
+        width: 100%;
+    }
+}
+/*Tablet: width >= 740px and width < 1024*/
+@media only screen and  (min-width: 46.25rem) and (max-width:63.9375rem){
+    .header_nav-info{
+        display: none;
+    }
+    .header_nav-info--mobile{
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .header_nav{
+        padding: 30px 15px;
+    }
+    .content_Education{
+        height: 550px;
+        display: flex;
+        justify-content: center;
+    }
+    .content_Education--title h3{
+        font-size: var(--layout-title);
+    }
+    .content_Education--content h4{
+        font-size: 1.8rem;
+        line-height: 35px;
+    }
+    .content_Education-item{
+        padding: 0 15px;
+        width: 400px;
+    }
+    .content_content-year{
+        font-size: 1.1rem !important;
+    }
+    .content_content-Univarsity{
+        font-size: 1.2rem !important;
+        line-height: 35px;
+    }
+    /**/
+    .content_AboutMe{
+        display: flex;
+        justify-content: center;
+        min-height: 1000px;
+        height: unset;
+    }
+    .content_AboutMe--title h3{
+        font-size: var(--layout-title);
+    }
+    .content_AboutMe-item{
+        padding: 0 15px;
+        width: 400px;
+    }
+    .crossbar{
+        display: none;
+    }
+    .crossbar_moblie{
+        position: relative;
+        display: block;
+        border-bottom: 2px solid black;
+        opacity: 0.5;
+        height: 50px;
+        width: 45px;
+    }
+    .crossbar_moblie::before{
+        content: "";
+        position: absolute;
+        background-color: #fff;
+        bottom: -2px;
+        width: 10px;
+        height: 2px;
+        left: calc(50% - calc(10px / 2));
+    }
+    /**/
+    .content_Employment{
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .content_Employment-block{
+        padding: 0 15px;
+        margin: 50px 0;
+        width: 400px;
+    }
+    .content_Employment--title h3{
+        font-size: var(--layout-title);
+        margin-bottom: 20px;
+    }
+    .Employment_content-item--left h4{
+        font-size: 1.8rem;
+    }
+    .content_Employment--content div ~ div{
+        margin-bottom: 0 !important;
+    }
+    .Employment_content-item--right{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 0;
+    }
+    .Employment_content-item{
+        flex-direction: column;
+    }
+    /**/
+    .content_Whatclientssayaboutme{
+        height: unset;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    .content_Whatclientssayaboutme-title h3{
+        font-size: var(--layout-title);
+    }
+    .content_Whatclientssayaboutme-block{
+        width: 410px;
+        padding: 0 15px;
+        margin: 50px 0;
+    }
+    .Whatclientssayaboutme_left--quotes i{
+        margin: 30px 0;
+        font-size: 1.5rem;
+    }
+    .content_Whatclientssayaboutme-about{
+        flex-direction: column;
+    }
+    .content_Whatclientssayaboutme-about div{
+        width: 100%;
+    }
+    /**/
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 350px;
+    }
+    .footer_content{
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0 15px;
+        width: auto;
+    }
+    .footer_content-left h3{
+        font-size: var(--layout-title);
+        margin-bottom: 25px;
+    }
+    .footer_content-right h4{
+        margin-bottom: 25px;
+        font-size: 2rem;
+    }
+    .footer_content div ~ div{
+        width: 100%;
+    }
+}
